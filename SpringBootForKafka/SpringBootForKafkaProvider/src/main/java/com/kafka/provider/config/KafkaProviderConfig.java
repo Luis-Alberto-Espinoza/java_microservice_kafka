@@ -23,7 +23,7 @@ public class KafkaProviderConfig {
         properties.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
         properties.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG,StringSerializer.class);
         return properties;
-    };
+    }
 
     @Bean
     public ProducerFactory<String, String> providerFactory(){
